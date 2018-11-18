@@ -38,7 +38,8 @@ If you use code from this folder for your work, please cite
 Heike Adel and Hinrich Schuetze, "Exploring Different Dimensions of Attention for Uncertainty Detection", in EACL 2017
 
 Bibtex:
-`@inproceedings{adel2017exploring,
+```
+@inproceedings{adel2017exploring,
   authors = {Heike Adel and Hinrich Sch\"{u}tze},
   title = {Exploring Different Dimensions of Attention for Uncertainty Detection},
   booktitle = {Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics},
@@ -47,4 +48,5 @@ Bibtex:
   address   = {Valencia, Spain},
   publisher = {Association for Computational Linguistics},
   pages     = {22--34}
-}`
+}
+```
