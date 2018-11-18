@@ -15,9 +15,11 @@ The config files *_wiki will train and evaluate on the Wikipedia dataset
 of CoNLL 2010 Hedge Cue Detection Task [Farkas et al. 2010],
 the config files *_bio will train and evaluate on the Biomedical dataset
 of the same shared task.
+
 The shared task data is publicly available. In this folder, we only
 include our preprocessed versions of it (tokenized + represented by
 word embeddings).
+
 Tokenization has been done with the Stanford tokenizer [Manning et al. 2014].
 Our script for the other preprocessing steps is createDataStream_uncertainty_blocks.py
 It can be run on other data as follows:
@@ -36,7 +38,7 @@ If you use code from this folder for your work, please cite
 Heike Adel and Hinrich Schuetze, "Exploring Different Dimensions of Attention for Uncertainty Detection", in EACL 2017
 
 Bibtex:
-@inproceedings{adel2017exploring,
+`@inproceedings{adel2017exploring,
   authors = {Heike Adel and Hinrich Sch\"{u}tze},
   title = {Exploring Different Dimensions of Attention for Uncertainty Detection},
   booktitle = {Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics},
@@ -45,4 +47,4 @@ Bibtex:
   address   = {Valencia, Spain},
   publisher = {Association for Computational Linguistics},
   pages     = {22--34}
-}
+}`
