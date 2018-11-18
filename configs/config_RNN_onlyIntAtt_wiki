@@ -1,0 +1,17 @@
+#train=data/task1_train_wikipedia_rev2.tokenized.txt
+#test=data/task1_weasel_eval.tokenized.txt
+file=data/fueldataset_uncertainty_wiki_RNN
+#wordvectors=data/vecs.txt
+batchsize=10
+contextsize=230
+net=net.RNN.onlyIntAtt_onH_wiki
+hidden=100
+rnnH=10
+lrate=0.1
+combinationMethod=none
+adagrad=True
+vectorsize=400
+attentionMethod=internalOnH
+gradientClipping=1.0
+n_epochs=8
+saveModel=True

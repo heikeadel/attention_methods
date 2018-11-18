@@ -1,0 +1,17 @@
+#train=data/task1_train_bio.txt.tokenized
+#test=data/task1_bio_eval.txt.tokenized
+file=data/fueldataset_uncertainty_bio_CNN
+#wordvectors=data/vecs.txt
+batchsize=10
+filtersize=3
+contextsize=230
+net=net.intAtt_onH_bio
+hidden=500
+lrate=0.03
+kmax=3
+nkerns=100
+attentionMethod=internalOnH
+combinationMethod=concatenation
+vectorsize=400
+n_epochs=10
+saveModel=True
