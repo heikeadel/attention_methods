@@ -34,6 +34,19 @@ def openTokenizedFile(filename, contextsize):
     texts.append(sentenceReduced)
   return texts, labels
 
+def openTokenizedFileWithoutPadding(filename, contextsize):
+  f = open(filename, 'r')
+  labels = []
+  texts = []
+  for line in f:
+    line = line.strip()
+    label, sentence = line.split(' :: ')
+    labelInt = int(label)
+    sentenceReduced = reduceSentenceToContextsize(sentence, contextsize)
+    labels.append(labelInt)
+    texts.append(sentenceReduced)
+  return texts, labels
+  
 def readConfig(configfile):
   config = {}
   # read config file
