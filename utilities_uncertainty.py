@@ -21,6 +21,16 @@ def padAndReduceSentenceToContextsize(sentence, contextsize):
     sentenceList.append("<empty>")
   return sentenceList
 
+def reduceSentenceToContextsize(sentence, contextsize):
+  sentenceList = sentence.split()
+  while len(sentenceList) > contextsize:
+    sentenceList.pop(len(sentenceList) - 1)
+    if len(sentenceList) > contextsize:
+      sentenceList.pop(0)
+  while len(sentenceList) < contextsize:
+    sentenceList.append("<empty>")
+  return sentenceList
+  
 def openTokenizedFile(filename, contextsize):
   f = open(filename, 'r')
   labels = []
